@@ -1,0 +1,18 @@
+$pri: #00174b;
+$sec: #8c287e;
+$ter: #1d293f;
+$colorlist: ($pri pri) ($sec sec) ($ter ter);
+
+@each $color, $nombre in $colorlist {
+  .#{$nombre} {
+    color: $color;
+  }
+}
+
+$colorbg: ($pri bg-pri) ($sec bg-sec) ($ter bg-ter);
+
+@each $color, $nombre in $colorbg {
+  .#{$nombre} {
+    background-color: $color;
+  }
+}

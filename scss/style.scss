@@ -1,0 +1,16 @@
+$ff-base: "Lexend", sans-serif;
+$ff-secondary: "Roboto", sans-serif;
+
+p {
+  font-family: $ff-secondary;
+}
+
+.pie {
+  background: url("../img/curvacuadro.png");
+  background-size: 100%;
+}
+
+@import "colors";
+@import "banner";
+@import "background";
+@import "animations";

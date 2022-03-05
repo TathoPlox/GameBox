@@ -1,0 +1,12 @@
+body {
+  background-color: #f5f5f5;
+  background: top no-repeat url("../svg/top.svg"),
+    bottom no-repeat url("../img/fondobot.png");
+  font-family: $ff-base;
+}
+
+.bodyclass {
+  background: top no-repeat url("../img/fondotop.png"),
+    bottom no-repeat url("../img/fondobot.png");
+  background-size: 100%;
+}
