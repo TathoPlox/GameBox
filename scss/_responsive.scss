@@ -1,0 +1,49 @@
+@media screen and (min-width: 1399px) {
+  .chacha {
+    top: -8rem;
+  }
+  .tit__text {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tit__titulo {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .chacha {
+    top: -6rem;
+  }
+  .tit__text {
+    color: $pri;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .chacha {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .tit__titulo {
+    color: $pri;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .animation1 {
+    width: 50%;
+    align-items: center;
+    margin-bottom: -3rem;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  footer {
+    background-color: #00103b;
+  }
+}

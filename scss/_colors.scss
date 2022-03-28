@@ -9,10 +9,8 @@ $colorlist: ($pri pri) ($sec sec) ($ter ter);
   }
 }
 
-$colorbg: ($pri bg-pri) ($sec bg-sec) ($ter bg-ter);
-
-@each $color, $nombre in $colorbg {
-  .#{$nombre} {
+@each $color, $nombre in $colorlist {
+  .bg-#{$nombre} {
     background-color: $color;
   }
 }

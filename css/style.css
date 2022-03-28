@@ -10,6 +10,76 @@ p {
   font-size: 13px;
 }
 
+/*productos*/
+#euros:checked ~ #gallery .mesa4x,
+#euros:checked ~ #gallery .cartas,
+#euros:checked ~ #gallery .fillers,
+#euros:checked ~ #gallery .roll {
+  display: none;
+}
+
+#mesa4x:checked ~ #gallery .euros,
+#mesa4x:checked ~ #gallery .cartas,
+#mesa4x:checked ~ #gallery .fillers,
+#mesa4x:checked ~ #gallery .roll {
+  display: none;
+}
+
+#cartas:checked ~ #gallery .mesa4x,
+#cartas:checked ~ #gallery .euros,
+#cartas:checked ~ #gallery .fillers,
+#cartas:checked ~ #gallery .roll {
+  display: none;
+}
+
+#fillers:checked ~ #gallery .mesa4x,
+#fillers:checked ~ #gallery .cartas,
+#fillers:checked ~ #gallery .euros,
+#fillers:checked ~ #gallery .roll {
+  display: none;
+}
+
+#roll:checked ~ #gallery .mesa4x,
+#roll:checked ~ #gallery .cartas,
+#roll:checked ~ #gallery .euros,
+#roll:checked ~ #gallery .fillers {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.gallerymenu__filters label {
+  margin-left: 0.7rem;
+  position: absolute;
+  color: #00174b;
+  background-color: #f5f5f5;
+  padding: 3px 10px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  border: #00174b solid 1px;
+}
+
+.gallerymenu__filters label:hover {
+  background: #8c287e;
+  border: solid #8c287e 1px;
+  color: #f5f5f5;
+}
+
+input[type=radio]:checked + label {
+  padding: 5px 15 px;
+  background: #8c287e;
+  border: solid #8c287e 1px;
+  color: #f5f5f5;
+}
+
+.galleryphotos {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
 .pri {
   color: #00174b;
 }
@@ -62,8 +132,27 @@ body {
 }
 
 footer {
-  background: no-repeat url(../img/footer.png);
+  background: no-repeat url(../img/footer.png), linear-gradient(0deg, #00103b 0%, #00103b 64%, rgba(0, 16, 59, 0) 65%);
   background-size: 100%;
+}
+
+.podio__f,
+.podio__s,
+.podio__t {
+  background-size: cover;
+  background-position: center;
+}
+
+.podio__f {
+  background-image: url(../img/fondo-menu.jpg);
+}
+
+.podio__s {
+  background-image: url(../img/fondo-menu2.jpg);
+}
+
+.podio__t {
+  background-image: url(../img/fondo-menu3.jpg);
 }
 
 .hoverbg {
@@ -90,6 +179,52 @@ a:hover {
 .animation1 {
   animation-duration: 1s;
   animation-name: move;
+}
+
+@media screen and (min-width: 1399px) {
+  .chacha {
+    top: -8rem;
+  }
+
+  .tit__text {
+    color: white;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tit__titulo {
+    color: white;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .chacha {
+    top: -6rem;
+  }
+
+  .tit__text {
+    color: #00174b;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .chacha {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tit__titulo {
+    color: #00174b;
+  }
+}
+@media screen and (max-width: 767px) {
+  .animation1 {
+    width: 50%;
+    align-items: center;
+    margin-bottom: -3rem;
+  }
+}
+@media screen and (max-width: 566px) {
+  footer {
+    background-color: #00103b;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

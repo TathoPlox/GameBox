@@ -17,6 +17,31 @@ body {
 }
 
 footer {
-  background: no-repeat url(../img/footer.png);
+  background: no-repeat url(../img/footer.png),
+    linear-gradient(
+      0deg,
+      rgba(0, 16, 59, 1) 0%,
+      rgba(0, 16, 59, 1) 64%,
+      rgba(0, 16, 59, 0) 65%
+    );
   background-size: 100%;
+}
+
+.podio__f,
+.podio__s,
+.podio__t {
+  background-size: cover;
+  background-position: center;
+}
+
+.podio__f {
+  background-image: url(../img/fondo-menu.jpg);
+}
+
+.podio__s {
+  background-image: url(../img/fondo-menu2.jpg);
+}
+
+.podio__t {
+  background-image: url(../img/fondo-menu3.jpg);
 }
