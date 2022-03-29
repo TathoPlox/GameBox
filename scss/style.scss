@@ -14,79 +14,9 @@ p {
   font-size: 13px;
 }
 
-/*productos*/
-
-#euros:checked ~ #gallery .mesa4x,
-#euros:checked ~ #gallery .cartas,
-#euros:checked ~ #gallery .fillers,
-#euros:checked ~ #gallery .roll {
-  display: none;
-}
-
-#mesa4x:checked ~ #gallery .euros,
-#mesa4x:checked ~ #gallery .cartas,
-#mesa4x:checked ~ #gallery .fillers,
-#mesa4x:checked ~ #gallery .roll {
-  display: none;
-}
-
-#cartas:checked ~ #gallery .mesa4x,
-#cartas:checked ~ #gallery .euros,
-#cartas:checked ~ #gallery .fillers,
-#cartas:checked ~ #gallery .roll {
-  display: none;
-}
-
-#fillers:checked ~ #gallery .mesa4x,
-#fillers:checked ~ #gallery .cartas,
-#fillers:checked ~ #gallery .euros,
-#fillers:checked ~ #gallery .roll {
-  display: none;
-}
-
-#roll:checked ~ #gallery .mesa4x,
-#roll:checked ~ #gallery .cartas,
-#roll:checked ~ #gallery .euros,
-#roll:checked ~ #gallery .fillers {
-  display: none;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.gallerymenu__filters label {
-  margin-left: 0.7rem;
-  position: absolute;
-  color: #00174b;
-  background-color: #f5f5f5;
-  padding: 3px 10px;
-  position: relative;
-  border-radius: 4px;
-  cursor: pointer;
-  border: #00174b solid 1px;
-}
-
-.gallerymenu__filters label:hover {
-  background: #8c287e;
-  border: solid #8c287e 1px;
-  color: #f5f5f5;
-}
-
-input[type="radio"]:checked + label {
-  padding: 5px 15 px;
-  background: #8c287e;
-  border: solid #8c287e 1px;
-  color: #f5f5f5;
-}
-
-.galleryphotos {
-  margin-top: 20px;
-  margin-bottom: 80px;
-}
-
 @import "colors";
 @import "banner";
 @import "background";
 @import "animations";
 @import "responsive";
+@import "imputs";
