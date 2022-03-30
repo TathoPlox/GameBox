@@ -14,3 +14,8 @@ $colorlist: ($pri pri) ($sec sec) ($ter ter);
     background-color: $color;
   }
 }
+
+a {
+  text-decoration: none;
+  color: $pri;
+}

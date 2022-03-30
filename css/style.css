@@ -32,6 +32,34 @@ h1 {
   margin-right: 10px;
 }
 
+@media (max-width: 767px) {
+  .card {
+    margin: 1rem 0.7rem 1rem;
+    max-width: 80vw;
+  }
+}
+.card-text__sug {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.footer__card {
+  line-height: 1.2rem;
+  padding: 2rem 0 1.4rem 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#position {
+  font-size: 0.7rem;
+}
+
 .pri {
   color: #00174b;
 }
@@ -54,12 +82,6 @@ h1 {
 
 .bg-ter {
   background-color: #1d293f;
-}
-
-nav ul {
-  height: 4rem;
-  box-shadow: 0px 3px 0px #009abf;
-  align-items: center;
 }
 
 a {
@@ -146,6 +168,13 @@ a:hover {
   .tit__titulo {
     color: white;
   }
+
+  nav ul {
+    background-color: white;
+    height: 4rem;
+    box-shadow: 0px 3px 0px #009abf;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1399px) {
   .chacha {
@@ -164,6 +193,10 @@ a:hover {
 @media screen and (max-width: 991px) {
   .tit__titulo {
     color: #00174b;
+  }
+
+  ul {
+    background-color: pri;
   }
 }
 @media screen and (max-width: 767px) {

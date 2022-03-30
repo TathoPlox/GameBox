@@ -36,8 +36,36 @@ h1 {
   margin-right: 10px;
 }
 
+@media (max-width: 767px) {
+  .card {
+    margin: 1rem 0.7rem 1rem;
+    max-width: 80vw;
+  }
+}
+
+.card-text__sug {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.footer__card {
+  line-height: 1.2rem;
+  padding: 2rem 0 1.4rem 0;
+  font-family: $ff-secondary;
+}
+
+#name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#position {
+  font-size: 0.7rem;
+}
+
 @import "colors";
-@import "banner";
 @import "background";
 @import "animations";
 @import "responsive";
